@@ -33,6 +33,10 @@ html {
   .screen > div {
     margin-right: 0.5em;
   }
+
+  .first-operand {
+    font-size: 2em;
+  }
   .keys  {
     height: 20em;
     width: 19em;

@@ -1,7 +1,9 @@
-const seven = document.querySelector("#seven");
+const numbers = document.querySelectorAll(".number");
 const firstOperand = document.querySelector(".first-operand");
 
-// seven.addEventListener('click', () => {
-//     const firstOperandText = document.createElement('span');
-//     firstOperand.appendChild(firstOperandText).textContent = seven.value;
-// })
+numbers.forEach( number => {
+    number.addEventListener('click', () => {
+        let firstNumber = document.createElement("span")
+        firstOperand.appendChild(firstNumber).textContent = number.value;
+    })
+})
