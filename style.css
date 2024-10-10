@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    margin: 5.5em auto;
+    height: 25rem;
+    width: 20rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screen  {
+    height: 5em;
+    width: 19em;
+    background-color: black;
+    margin: 0.3rem auto 0.3em auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .screen > div {
+    margin-right: 0.5em;
+  }
+  .keys  {
+    height: 20em;
+    width: 19em;
+    border: 1px solid black;
+    margin: 0 auto 0.3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2px;
+  }
+
+  .keys > button {
+    width: 5.6em;
+    border: 1px solid;
+  }
+
+  .keys > button:hover {
+    background-color: white;
+  } 
