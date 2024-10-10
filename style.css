@@ -5,6 +5,10 @@ html {
     box-sizing: inherit;
   }
 
+  body {
+    background: linear-gradient(to right, rgb(19, 3, 252),rgba(19, 3, 252, 0));
+  }
+
   .container {
     margin: 5.5em auto;
     height: 25rem;
