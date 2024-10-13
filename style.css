@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(2, 83, 94),rgba(7, 7, 7, 0));
+  }
+
+  .calculator {
+    border: 1px solid;
+    height: 25em;
+    width: 20em;
+    margin-top: 10em;
+    border-radius: 5px;
+  }
+
+  .display  {
+    height: 5em;
+    width: 19.9rem;
+  }
+
+  .keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    grid-area: 1em;   
+  }
+ 
+  .keys button{
+    height: 4.95em;
+    width: 5em;
+    border-radius: 5px;
+  }
+
+#equal {
+    width: 10.2em;
+}
