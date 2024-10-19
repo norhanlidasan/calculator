@@ -16,29 +16,56 @@ html {
   .calculator {
     border: 1px solid;
     height: 25em;
-    width: 20em;
+    width: 17em;
     margin-top: 10em;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0;
   }
 
-  .display  {
-    height: 5em;
-    width: 19.9rem;
+  .previous-display {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.2em;
+    margin-right: 9px;
+    margin-top: 5px;
+
   }
+
+  .current-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    font-size: 2em;
+    width: 8.4em;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  
 
   .keys {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    grid-area: 1em;   
+    gap: 1.5px;
+    justify-content: center;
   }
  
   .keys button{
-    height: 4.95em;
-    width: 5em;
+    height: 4.9em;
+    width: 4.9em;
     border-radius: 5px;
   }
 
 #equal {
-    width: 10.2em;
+    width: 9.9em;
 }
