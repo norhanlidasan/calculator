@@ -31,15 +31,18 @@ html {
     flex-direction: column;
     gap: 2px;
     height: 5em;
+        
   }
 
   .previous-display {
+    width: 14em;
     display: flex;
     justify-content: end;
     align-items: end;
     font-size: 1.2em;
     margin-right: 9px;
     margin-top: 5px;
+    background-color: azure;
   }
 
   .current-display {
@@ -50,6 +53,7 @@ html {
     width: 8.4em;
     margin-right: 5px;
     margin-top: 2px;
+    background-color: azure;
   }
   
 
