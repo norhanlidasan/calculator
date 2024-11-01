@@ -1,57 +1,77 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  body {
-    background: linear-gradient(to right, rgb(19, 3, 252),rgba(19, 3, 252, 0));
-  }
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(2, 83, 94),rgba(7, 7, 7, 0));
+}
 
-  .container {
-    margin: 5.5em auto;
-    height: 25rem;
-    width: 20rem;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-  }
+.calculator {
+  border: 1px solid;
+  height: 26.5em;
+  width: 17em;
+  margin-top: 10em;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(118, 139, 139);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  
+}
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2px;
+  height: 5em;
+      
+}
 
-  .screen  {
-    height: 5em;
-    width: 19em;
-    background-color: black;
-    margin: 0.3rem auto 0.3em auto;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
+.previous-display {
+  height: 24px;
+  width: 14em;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 1.2em;
+  margin-right: 9px;
+  margin-top: 5px;
+  background-color: azure;
+}
 
-  .screen > div {
-    margin-right: 0.5em;
-  }
+.current-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  font-size: 2em;
+  width: 8.4em;
+  height: 37px;
+  margin-right: 5px;
+  margin-top: 2px;
+  background-color: azure;
+}
 
-  .first-operand {
-    font-size: 2em;
-  }
-  .keys  {
-    height: 20em;
-    width: 19em;
-    border: 1px solid black;
-    margin: 0 auto 0.3em auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2px;
-  }
 
-  .keys > button {
-    width: 5.6em;
-    border: 1px solid;
-  }
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5px;
+  justify-content: center;
+}
 
-  .keys > button:hover {
-    background-color: white;
-  } 
+.keys button{
+  height: 4.9em;
+  width: 4.9em;
+  border-radius: 5px;
+}
+
+#equal {
+  width: 9.9em;
+}
